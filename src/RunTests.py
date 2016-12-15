@@ -7,6 +7,7 @@ import csv
 f = Fingerprint.Fingerprint()
 
 # Open the test file
+with open('../tests/testfile1.csv', 'r') as tf:
     reader = csv.reader(tf)
     fp_data = list(reader)
 
